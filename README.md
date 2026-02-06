@@ -87,7 +87,7 @@ CREATE TABLE users (
   reset_token_expiry DATETIME,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
+```sql
 
 BACKEND SETUP (Node.js |Express Js)
 1. Masuk ke folder backend
