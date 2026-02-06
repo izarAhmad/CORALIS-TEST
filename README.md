@@ -71,9 +71,17 @@ Authentication system berbasis **Flutter + Node.js + MySQL** dengan fitur login,
 
 ---
 
-# 🗄 KONFIGURASI SETUP
+---
 
-Jalankan SQL berikut di MySQL PHPMyAdmin:
+# ⚙️ Setup & Installation Guide
+
+Ikuti langkah berikut untuk menjalankan project di komputer baru (fresh machine).
+
+---
+
+# 🗄 Database Setup (MySQL)
+
+Jalankan SQL berikut di MySQL / phpMyAdmin:
 
 ```sql
 CREATE DATABASE coralis_auth;
@@ -87,20 +95,35 @@ CREATE TABLE users (
   reset_token_expiry DATETIME,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
 
+---
 
-BACKEND SETUP (Node.js |Express Js)
-1. Masuk ke folder backend
+# 🖥 Backend Setup (Node.js + Express)
+
+### 1. Masuk ke folder backend
+
+```bash
 cd coralis-auth-backend
+```
 
-2. Install dependency
+### 2. Install dependencies
+
+```bash
 npm install
+```
 
-3. Buat file .env (Jika sudah ada dan sama, tidak perlu diisi kembali)
-file. env terletak di folder coralis-auth-backend
+### 3. Buat file `.env`
 
-Isi sesuai konfigurasi:
+File `.env` berada di dalam folder:
 
+```
+coralis-auth-backend/.env
+```
+
+Isi dengan konfigurasi berikut:
+
+```
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=
@@ -109,40 +132,66 @@ DB_NAME=coralis_auth
 JWT_SECRET=supersecretkey
 EMAIL_USER=youremail@gmail.com
 EMAIL_PASS=yourpassword
+```
 
-4. Jalankan backend
+> Jika file `.env` sudah ada dan konfigurasi sama, tidak perlu membuat ulang.
+
+### 4. Jalankan backend server
+
+```bash
 node app.js
+```
 
+Server akan berjalan di:
 
-Server berjalan di:
+```
+http://localhost:3000
+```
 
-port 3000
+---
 
-FLUTTER SETUP
-1. Masuk ke folder Flutter
+# 📱 Flutter Setup
+
+### 1. Masuk ke folder Flutter
+
+```bash
 cd coralis_auth_app
+```
 
-2. Install package
+### 2. Install package Flutter
+
+```bash
 flutter pub get
+```
 
-3. Jalankan aplikasi
+### 3. Jalankan aplikasi
 
-Debug:
+Mode debug:
 
+```bash
 flutter run
+```
 
+Mode release:
 
-Release:
-
+```bash
 flutter run --release
+```
+
+Aplikasi dijalankan menggunakan **Android Emulator**.
+
+---
+
+# 🔗 API Endpoint
+
+| Method | Endpoint             | Description               |
+| ------ | -------------------- | ------------------------- |
+| POST   | /api/register        | Register user             |
+| POST   | /api/login           | Login user                |
+| POST   | /api/forgot-password | Send reset password token |
+| POST   | /api/reset-password  | Reset password            |
+
+---
 
 
-Aplikasi dijalankan pada Android Emulator.
-
-| Method | Endpoint             | Function            |
-| ------ | -------------------- | ------------------- |
-| POST   | /api/register        | Register user       |
-| POST   | /api/login           | Login               |
-| POST   | /api/forgot-password | Send reset token    |
-| POST   | /api/reset-password  | Update new password |
 
