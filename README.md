@@ -131,7 +131,7 @@ coralis-test
 
 ---
 
-# 🗄 DATABASE SETUP
+# 🗄 KONFIGURASI SETUP
 
 Jalankan SQL berikut di MySQL:
 
