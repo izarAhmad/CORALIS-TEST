@@ -73,7 +73,7 @@ Authentication system berbasis **Flutter + Node.js + MySQL** dengan fitur login,
 
 # 🗄 KONFIGURASI SETUP
 
-Jalankan SQL berikut di MySQL:
+Jalankan SQL berikut di MySQL PHPMyAdmin:
 
 ```sql
 CREATE DATABASE coralis_auth;
