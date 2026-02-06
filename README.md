@@ -156,7 +156,8 @@ cd coralis-auth-backend
 2. Install dependency
 npm install
 
-3. Buat file .env
+3. Buat file .env (Jika sudah ada dan sama, tidak perlu diisi kembali)
+file. env terletak di folder coralis-auth-backend
 
 Isi sesuai konfigurasi:
 
