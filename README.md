@@ -36,6 +36,7 @@ Authentication system berbasis **Flutter + Node.js + MySQL** dengan fitur login,
 - Flutter 3.38.9
 - Dart 3.10.8
 - Android Studio
+- Android Emulator (Pixel 5 API 33)
 
 ## 🖥 Backend
 - Node.js
