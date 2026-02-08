@@ -1,4 +1,4 @@
-Coralis Auth App
+Coralis Auth App (Achmad Roudlotun Nizar)
 
 Flutter mobile authentication application with Register, Login, and Forgot Password features integrated with Node.js (Express) backend and MySQL database.
 
